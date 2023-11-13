@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Note It</string>
+
+    <string name="ListFragment_fab">Press button to add notes.</string>
+    <string name="ListFragment_header">Notes</string>
+
+    <string name="AddNoteFragment_header">Add Note</string>
+    <string name="AddNoteFragment_contentDescription">Done button to save the note</string>
+    <string name="AddNoteFragment_noteTitleHint">Enter the title</string>
+    <string name="AddNoteFragment_noteContentHint">Enter the description</string>
+
+    <string name="UpdateNoteFragment_header">Update Note</string>
+    <string name="UpdateNoteFragment_noteTitleHint">Update the title</string>
+    <string name="UpdateNoteFragment_noteContentHint">Update the description</string>
+    <string name="UpdateNoteFragment_contentDescription">Delete button to delete the note</string>
+
+    <string name="NoteItem_title">Title</string>
+    <string name="NoteItem_content">Content</string>
+</resources>

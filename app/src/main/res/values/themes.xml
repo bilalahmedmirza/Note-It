@@ -1,0 +1,14 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NoteIt" parent="Theme.MaterialComponents.Light.NoActionBar">
+         <item name="colorPrimary">@color/orange</item>
+         <item name="colorPrimaryVariant">@color/orange</item>
+         <item name="android:statusBarColor">@color/orange</item>
+    </style>
+
+    <!-- Splash screen theme. -->
+    <style name="splashScreenTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:statusBarColor">@color/orange</item>
+    </style>
+</resources>
