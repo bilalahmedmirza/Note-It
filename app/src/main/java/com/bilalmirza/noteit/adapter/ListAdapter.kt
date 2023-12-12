@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bilalmirza.noteit.databinding.NoteItemBinding
 import com.bilalmirza.noteit.model.Note
@@ -32,9 +33,10 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
         return noteList.size
     }
 
-    @SuppressLint("NotifyDataSetChanged")
-    fun setData(user: List<Note>){
-        this.noteList = user
-        notifyDataSetChanged()
+    fun updateData(newNoteList: List<Note>) {
+        val diffUtil = MyDiffUtil(noteList, newNoteList)
+        val diffResults =DiffUtil.calculateDiff(diffUtil)
+        noteList = newNoteList
+        diffResults.dispatchUpdatesTo(this)
     }
 }

@@ -27,8 +27,9 @@ class ListFragment : Fragment(R.layout.fragment_list) {
 
         //  NOTE VIEW MODEL
         noteViewModel = ViewModelProvider(this)[NoteViewModel::class.java]
+
         noteViewModel.readAllNote.observe(viewLifecycleOwner) { note ->
-            adapter.setData(note)
+            adapter.updateData(note)
         }
 
         binding.floatingActionButton.setOnClickListener {
